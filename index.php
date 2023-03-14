@@ -6,13 +6,13 @@ $method = $_SERVER["REQUEST_METHOD"];
 $url_string = $_SERVER["REQUEST_URI"];
 $url = explode('/' , $url_string);
 $errors = [] ;
-
+$result = NULL ;
 if ( !empty($url[3]) ) {
 
     switch ( $url[3] ) {
         case 'images' : 
             try {
-                imagesRoutes();
+                $result =  imagesRoutes();
             }
             catch (Exception $exception) {
                 array_push($errors , $exception->getMessage() ); 

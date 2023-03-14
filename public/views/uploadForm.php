@@ -10,7 +10,13 @@
 <body class="container d-flex justify-content-center align-items-center" style="height: 100vh; background-color: #CCD5AE;">
     <form action='/aswupload/index.php/images' method='POST' enctype="multipart/form-data" style="background-color: #E9EDC9; padding: 5%; border-radius: 30px;">
         <div class="mb-3">
-            <label class="form-label" style=="color: Red">
+            <label class="form-label" style="color: green;">
+              <?php  
+                if ( !empty ($result) ){
+                  echo $result ;
+                }
+              ?>
+              <label class="form-label" style="color: Red;">
               <?php  
                 if ( !empty ($errors) ){
                   foreach ($errors as $error) {
