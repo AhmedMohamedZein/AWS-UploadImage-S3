@@ -1,6 +1,10 @@
 # AWS-UploadImage-S3
 
 
+## Composer: 
+  
+  `composer install`
+
 ## You should have a config.php file contains the following constants:
  
  - `_MB_` = `1048576`
