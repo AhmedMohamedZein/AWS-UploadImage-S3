@@ -1,0 +1,9 @@
+{
+    "require": {
+        "aws/aws-sdk-php": "*"
+    },
+    "autoload": {
+        "files": ["config.php","routes/images.php","controllers/imagesController.php","utils/imagesValidation.php"],
+        "classmap": ["imagesController.php" , "classes"]
+    }
+}
