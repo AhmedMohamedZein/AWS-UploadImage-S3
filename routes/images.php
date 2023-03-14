@@ -17,7 +17,7 @@ function imagesRoutes () {
             break;
         case 'POST' : // Here you will upload the photo using the imagesController  
             try {
-                $imageObject->saveImage();
+                return $imageObject->saveImage();
             }catch (Exception $exception){
                 throw new Exception ( $exception->getMessage() );
             }
